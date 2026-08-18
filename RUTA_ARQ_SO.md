@@ -16,13 +16,13 @@
 
 | Fase | Tema | Estado |
 |---|---|---|
-| 1 | Arquitectura de Computadores | 🟢 En progreso |
-| 2 | Introducción a Sistemas Operativos | ⬜ Pendiente |
+| 1 | Arquitectura de Computadores | ✅ Completado |
+| 2 | Introducción a Sistemas Operativos | 🟢 En progreso |
 | 3 | Conceptos Avanzados de Sistemas Operativos | ⬜ Pendiente |
 | 4 | Integración y Repaso General | ⬜ Pendiente |
 | 5 | Preparación Examen Coderbyte | ⬜ Pendiente |
 
-**Progreso orientativo:** Fase 1 — ~70%
+**Progreso orientativo:** Fase 2 — ~12% (Módulo 5 completado)
 
 ---
 
@@ -166,23 +166,23 @@ Entender cómo está organizado un computador y cómo la CPU ejecuta las instruc
 - [x] Ejemplo paso a paso
 - [x] Throughput (mejora del rendimiento)
 - [x] Ventajas y limitaciones
-- [ ] Mini examen
-- [ ] Corrección
+- [x] Mini examen
+- [x] Corrección
 
-**Estado:** 🟢 En progreso (7 de 9 subtemas completados)
+**Estado:** ✅ Completado
 
 ---
 
 ### 📝 Examen de Fase 1
 
-- [ ] Examen teórico
-- [ ] Preguntas de razonamiento
-- [ ] Preguntas de aplicación
-- [ ] Corrección
-- [ ] Registro de errores
-- [ ] Repaso de temas débiles
+- [x] Examen teórico
+- [x] Preguntas de razonamiento
+- [x] Preguntas de aplicación
+- [x] Corrección
+- [x] Registro de errores
+- [x] Repaso de temas débiles
 
-**Estado:** ⬜ Pendiente
+**Estado:** ✅ Completado (73%)
 
 ---
 
@@ -198,22 +198,22 @@ Comprender qué hace un sistema operativo y cómo administra los recursos del co
 
 **Complejidad:** 2/5
 
-- [ ] Qué es un sistema operativo
-- [ ] Funciones principales (CPU, memoria, E/S)
-- [ ] Roles del SO: administrador de recursos y máquina ampliada
-- [ ] Monoprogramación vs multiprogramación
-- [ ] Aprovechamiento de la CPU
-- [ ] DMA (Acceso Directo a Memoria)
-- [ ] Jerarquía de memoria (registros, caché, RAM, SSD, disco, nube)
-- [ ] Caching
-- [ ] Modo usuario vs modo supervisor
-- [ ] Llamadas al sistema (system calls)
-- [ ] Paso de parámetros (registros, tablas en memoria, stack)
-- [ ] Protección de memoria (registro base y límite)
-- [ ] Mini examen
-- [ ] Corrección
+- [x] Qué es un sistema operativo
+- [x] Funciones principales (CPU, memoria, E/S)
+- [x] Roles del SO: administrador de recursos y máquina ampliada
+- [x] Monoprogramación vs multiprogramación
+- [x] Aprovechamiento de la CPU
+- [x] DMA (Acceso Directo a Memoria)
+- [x] Jerarquía de memoria (registros, caché, RAM, SSD, disco, nube)
+- [x] Caching
+- [x] Modo usuario vs modo supervisor
+- [x] Llamadas al sistema (system calls)
+- [x] Paso de parámetros (registros, tablas en memoria, stack)
+- [x] Protección de memoria (registro base y límite)
+- [x] Mini examen
+- [x] Corrección
 
-**Estado:** ⬜ Pendiente
+**Estado:** ✅ Completado
 
 ---
 
@@ -529,6 +529,10 @@ Usaremos esta sección para registrar conceptos que hayan causado dificultades.
 | 2026-08-14 | CISC vs RISC | Confundir registros R1/R2/R3 con procesos | R1, R2 y R3 son registros de la CPU; un proceso es otro concepto | ✅ |
 | 2026-08-14 | CISC vs RISC | Confundir ISA con una simple lista de instrucciones | La ISA define instrucciones, registros y reglas/interfaz de la arquitectura | ✅ |
 | 2026-08-16 | Pipelining | Confundir resource hazard con data hazard | Resource hazard = misma etapa; Data hazard = resultado no listo | ✅ |
+| 2026-08-18 | Pipelining | Confundir branch prediction con predicción de tiempo | Branch prediction predice si un salto será tomado o no para mantener el pipeline lleno | ✅ |
+| 2026-08-18 | Ciclo de Instrucción | Confundir IR con PC | PC almacena dirección de próxima instrucción; IR almacena instrucción actual | ✅ |
+| 2026-08-18 | Von Neumann | No reconocer que "programa almacenado" significa datos e instrucciones en la misma memoria | En Von Neumann, datos e instrucciones comparten la misma memoria principal | ✅ |
+| 2026-08-18 | Estructuras SO | Confundir modo supervisor con el SO completo (Linux/Windows) | Modo supervisor es el modo donde ejecuta el kernel del SO, no el SO completo | ✅ |
 
 ---
 
@@ -537,26 +541,27 @@ Usaremos esta sección para registrar conceptos que hayan causado dificultades.
 Antes del examen final debería poder explicar con mis propias palabras:
 
 ### Fase 1
-- [ ] Qué es Von Neumann
-- [ ] Qué hace la CPU, ALU y Unidad de Control
-- [ ] Qué almacena la memoria
-- [ ] Qué es un sistema de buses
-- [ ] Qué es el cuello de botella de Von Neumann
-- [ ] Qué diferencia hay entre Von Neumann y Harvard
-- [ ] Qué es Fetch, Decode y Execute
-- [ ] Qué es el PC y el IR
-- [ ] Qué es un registro
-- [ ] Qué son los ciclos indirecto e de interrupción
-- [ ] Qué diferencia hay entre CISC y RISC
-- [ ] Qué es Little Endian vs Big Endian
+- [x] Qué es Von Neumann
+- [x] Qué hace la CPU, ALU y Unidad de Control
+- [x] Qué almacena la memoria
+- [x] Qué es un sistema de buses
+- [x] Qué es el cuello de botella de Von Neumann
+- [x] Qué diferencia hay entre Von Neumann y Harvard
+- [x] Qué es Fetch, Decode y Execute
+- [x] Qué es el PC y el IR
+- [x] Qué es un registro
+- [x] Qué son los ciclos indirecto e de interrupción
+- [x] Qué diferencia hay entre CISC y RISC
+- [x] Qué es Little Endian vs Big Endian
 - [x] Qué es Pipelining y cómo mejora el throughput
+- [x] Qué es branch prediction
 
 ### Fase 2
-- [ ] Qué es un sistema operativo y sus funciones
-- [ ] Qué diferencia hay entre monoprogramación y multiprogramación
-- [ ] Qué es el DMA
-- [ ] Qué es la jerarquía de memoria
-- [ ] Qué son las llamadas al sistema
+- [x] Qué es un sistema operativo y sus funciones
+- [x] Qué diferencia hay entre monoprogramación y multiprogramación
+- [x] Qué es el DMA
+- [x] Qué es la jerarquía de memoria
+- [x] Qué son las llamadas al sistema
 - [ ] Qué es un proceso
 - [ ] Qué es un PCB
 - [ ] Qué es `fork()` y cómo crea procesos
@@ -626,11 +631,15 @@ Estado: ✅ Realizado
 
 ## Checkpoint Fase 1 — Módulo 4 (Pipelining)
 
-Estado: 🟡 En progreso (pendiente completar mini examen)
+Estado: ✅ Realizado
 
 ## Checkpoint Fase 1 — Examen de Fase
 
-Estado: ⬜ Pendiente
+Estado: ✅ Realizado (73%)
+
+## Checkpoint Fase 2 — Módulo 5 (Estructuras de SO)
+
+Estado: ✅ Realizado (94%)
 
 ---
 
@@ -655,6 +664,35 @@ Estado: 🟢 Fase 1 / Módulo 4 en progreso.
 - Próxima sesión: completar mini examen y corrección.
 
 Estado: 🟢 Fase 1 / Módulo 4 casi completado (7/9 subtemas).
+
+## Sesión 3
+
+- Repaso rápido de Pipelining: etapas, throughput, hazards.
+- Mini examen completado: 5/6 correctas (83%).
+- Error registrado: confundir branch prediction con predicción de tiempo.
+- Módulo 4 completado.
+- Próximo paso: Examen de Fase 1.
+
+Estado: 🟢 Fase 1 / Módulo 4 completado — pendiente Examen de Fase.
+
+## Sesión 4
+
+- Examen de Fase 1 completado: 73% (9.5/13)
+- Errores registrados: confundir IR con PC, concepto de programa almacenado
+- Fase 1 oficialmente completada
+- Inicio de Fase 2: Introducción a Sistemas Operativos
+
+Estado: ✅ Fase 1 completada — Iniciando Fase 2.
+
+## Sesión 5
+
+- Fase 2 iniciada: Introducción a Sistemas Operativos
+- Módulo 5 completado: Estructuras de SO (94% en mini examen)
+- Conceptos cubiertos: SO, roles, funciones, multiprogramación, DMA, jerarquía de memoria, caching, modos, system calls, parámetros, protección de memoria
+- Error registrado: confundir modo supervisor con SO completo
+- Próximo paso: Módulo 6 — Procesos
+
+Estado: 🟢 Fase 2 / Módulo 5 completado.
 
 ---
 
@@ -704,6 +742,32 @@ Aprendizaje:
 - **Resource hazard:** Dos instrucciones necesitan la **misma etapa** del pipeline al mismo tiempo.
 - **Data hazard:** Una instrucción necesita el **resultado de otra** que aún no está listo.
 
+### Pipelining — Branch Prediction
+
+Error: Confundir branch prediction con predicción de tiempo de ejecución.
+
+Aprendizaje: **Branch prediction** es una técnica que intenta predecir si un salto condicional (`if`, `for`, `while`) será tomado o no, para mantener el pipeline lleno y evitar ciclos vacíos.
+
+### Ciclo de Instrucción — PC vs IR
+
+Error: Confundir el PC (Program Counter) con el IR (Instruction Register).
+
+Aprendizaje:
+- **PC**: almacena la **dirección** de la próxima instrucción a ejecutar.
+- **IR**: almacena la **instrucción** actual que se está decodificando/ejecutando.
+
+### Von Neumann — Programa Almacenado
+
+Error: No reconocer que "programa almacenado" significa datos e instrucciones en la misma memoria.
+
+Aprendizaje: En la arquitectura Von Neumann, **tanto los datos como las instrucciones se almacenan en la misma memoria principal** y comparten el mismo bus. Esta es una de sus características fundamentales.
+
+### Estructuras de SO — Modo Supervisor
+
+Error: Confundir el modo supervisor con el SO completo (Linux/Windows).
+
+Aprendizaje: El **modo supervisor** es el nivel de ejecución donde corre el **kernel** del SO. Linux/Windows son sistemas operativos completos que incluyen el kernel, utilidades y interfaz. El modo supervisor es solo una forma de ejecución del procesador.
+
 ---
 
 # 🎯 REGLAS DEL CURSO
@@ -742,12 +806,12 @@ Al terminar esta ruta, el objetivo es que puedas:
 
 # 📌 ESTADO ACTUAL
 
-**Fase:** 1 — Arquitectura de Computadores
-**Módulo:** 4 — Segmentación (Pipelining)
-**Próximo tema:** Completar mini examen de Pipelining (pendiente preguntas 3 y 6)
-**Próximo reto:** Corrección del mini examen
+**Fase:** 2 — Introducción a Sistemas Operativos
+**Módulo:** 6 — Procesos
+**Próximo tema:** Iniciar Módulo 6 - Qué es un proceso
+**Próximo reto:** Comprender la creación y gestión de procesos con fork()
 
-**Último concepto dominado:** Ventajas y limitaciones del pipeline (hazards, dependencias de datos, branch prediction).
+**Último concepto dominado:** Estructuras de SO completadas (system calls, protección de memoria, modos de ejecución).
 
-**Último avance:** Pipelining: concepto, etapas, solapamiento, ejemplo, throughput vs latencia, ventajas y limitaciones (7 de 9 subtemas).
+**Último avance:** Fase 2 al ~12% — Módulo 5 completado.
 
