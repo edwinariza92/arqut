@@ -22,7 +22,7 @@
 | 4 | Integración y Repaso General | ⬜ Pendiente |
 | 5 | Preparación Examen Coderbyte | ⬜ Pendiente |
 
-**Progreso orientativo:** Fase 2 — ~12% (Módulo 5 completado)
+**Progreso orientativo:** Fase 2 — ~22% (Módulos 5 y 6 completados)
 
 ---
 
@@ -221,26 +221,26 @@ Comprender qué hace un sistema operativo y cómo administra los recursos del co
 
 **Complejidad:** 3/5
 
-- [ ] Qué es un proceso
-- [ ] Programa vs proceso
-- [ ] Estado de un proceso (nuevo, listo, ejecución, bloqueado, terminado)
-- [ ] PCB (Bloque de Control de Proceso)
-- [ ] Creación de procesos (`fork()`)
-- [ ] Relación padre-hijo
-- [ ] Árbol de procesos
-- [ ] Ejecución de nuevos programas (`exec`)
-- [ ] Sincronización con `wait()`
-- [ ] Terminación con `exit()`
-- [ ] Terminación de procesos
-- [ ] Procesos concurrentes
-- [ ] Contexto de un proceso y cambio de contexto
-- [ ] Procesos cooperantes
-- [ ] Comunicación entre Procesos (IPC): señales, memoria compartida, semáforos, mensajes
-- [ ] Relación con programas en C
-- [ ] Mini examen
-- [ ] Corrección
+- [x] Qué es un proceso
+- [x] Programa vs proceso
+- [x] Estado de un proceso (nuevo, listo, ejecución, bloqueado, terminado)
+- [x] PCB (Bloque de Control de Proceso)
+- [x] Creación de procesos (`fork()`)
+- [x] Relación padre-hijo
+- [x] Árbol de procesos
+- [x] Ejecución de nuevos programas (`exec`)
+- [x] Sincronización con `wait()`
+- [x] Terminación con `exit()`
+- [x] Terminación de procesos
+- [x] Procesos concurrentes
+- [x] Contexto de un proceso y cambio de contexto
+- [x] Procesos cooperantes
+- [x] Comunicación entre Procesos (IPC): señales, memoria compartida, semáforos, mensajes
+- [x] Relación con programas en C
+- [x] Mini examen
+- [x] Corrección
 
-**Estado:** ⬜ Pendiente
+**Estado:** ✅ Completado
 
 ---
 
@@ -562,11 +562,11 @@ Antes del examen final debería poder explicar con mis propias palabras:
 - [x] Qué es el DMA
 - [x] Qué es la jerarquía de memoria
 - [x] Qué son las llamadas al sistema
-- [ ] Qué es un proceso
-- [ ] Qué es un PCB
-- [ ] Qué es `fork()` y cómo crea procesos
-- [ ] Qué es un cambio de contexto
-- [ ] Qué es IPC
+- [x] Qué es un proceso
+- [x] Qué es un PCB
+- [x] Qué es `fork()` y cómo crea procesos
+- [x] Qué es un cambio de contexto
+- [x] Qué es IPC
 - [ ] Qué es un hilo
 - [ ] Qué diferencia hay entre proceso e hilo
 - [ ] Qué son hilos a nivel usuario vs kernel
@@ -641,6 +641,10 @@ Estado: ✅ Realizado (73%)
 
 Estado: ✅ Realizado (94%)
 
+## Checkpoint Fase 2 — Módulo 6 (Procesos)
+
+Estado: ✅ Realizado (100%)
+
 ---
 
 # 📈 REGISTRO DE SESIONES
@@ -693,6 +697,16 @@ Estado: ✅ Fase 1 completada — Iniciando Fase 2.
 - Próximo paso: Módulo 6 — Procesos
 
 Estado: 🟢 Fase 2 / Módulo 5 completado.
+
+## Sesión 6
+
+- Módulo 6 completado: Procesos (100% en mini examen)
+- Conceptos cubiertos: proceso, programa vs proceso, estados, PCB, fork(), padre-hijo, árbol de procesos, exec(), wait(), exit(), código de retorno, zombies/huérfanos, cambio de contexto, procesos cooperantes, IPC (señales, pipes, memoria compartida, semáforos, mensajes), relación con C
+- Mini examen: 7/7 (100%)
+- Errores registrados: ninguno nuevo
+- Próximo paso: Módulo 7 — Hilos (Threads)
+
+Estado: 🟢 Fase 2 / Módulo 6 completado.
 
 ---
 
@@ -807,11 +821,11 @@ Al terminar esta ruta, el objetivo es que puedas:
 # 📌 ESTADO ACTUAL
 
 **Fase:** 2 — Introducción a Sistemas Operativos
-**Módulo:** 6 — Procesos
-**Próximo tema:** Iniciar Módulo 6 - Qué es un proceso
-**Próximo reto:** Comprender la creación y gestión de procesos con fork()
+**Módulo:** 7 — Hilos (Threads)
+**Próximo tema:** Iniciar Módulo 7 - Qué es un hilo
+**Próximo reto:** Diferenciar procesos de hilos y programar hilos en C con POSIX
 
-**Último concepto dominado:** Estructuras de SO completadas (system calls, protección de memoria, modos de ejecución).
+**Último concepto dominado:** Procesos completados (fork, exec, wait, exit, IPC, cambio de contexto).
 
-**Último avance:** Fase 2 al ~12% — Módulo 5 completado.
+**Último avance:** Fase 2 al ~22% — Módulos 5 y 6 completados.
 
