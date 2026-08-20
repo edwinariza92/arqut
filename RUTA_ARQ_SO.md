@@ -22,7 +22,7 @@
 | 4 | Integración y Repaso General | ⬜ Pendiente |
 | 5 | Preparación Examen Coderbyte | ⬜ Pendiente |
 
-**Progreso orientativo:** Fase 2 — ~22% (Módulos 5 y 6 completados)
+**Progreso orientativo:** Fase 2 — ~35% (Módulos 5, 6 y 7 completados)
 
 ---
 
@@ -248,23 +248,23 @@ Comprender qué hace un sistema operativo y cómo administra los recursos del co
 
 **Complejidad:** 3/5
 
-- [ ] Qué es un hilo
-- [ ] Proceso vs hilo
-- [ ] Recursos compartidos (código, datos, archivos)
-- [ ] Stack propio de cada hilo
-- [ ] Hilos dentro de un proceso
-- [ ] Concurrencia vs paralelismo
-- [ ] Hilos a nivel usuario vs nivel kernel
-- [ ] Modelos multihilos (muchos a uno, uno a uno, muchos a muchos)
-- [ ] Ventajas de los hilos
-- [ ] Riesgos básicos
-- [ ] Programación de hilos en C (POSIX: `pthread_create`, `pthread_join`, `pthread_exit`)
-- [ ] Compilación con `-lpthread`
-- [ ] Evolución: de monoproceso a multicore
-- [ ] Mini examen
-- [ ] Corrección
+- [x] Qué es un hilo
+- [x] Proceso vs hilo
+- [x] Recursos compartidos (código, datos, archivos)
+- [x] Stack propio de cada hilo
+- [x] Hilos dentro de un proceso
+- [x] Concurrencia vs paralelismo
+- [x] Hilos a nivel usuario vs nivel kernel
+- [x] Modelos multihilos (muchos a uno, uno a uno, muchos a muchos)
+- [x] Ventajas de los hilos
+- [x] Riesgos básicos
+- [x] Programación de hilos en C (POSIX: `pthread_create`, `pthread_join`, `pthread_exit`)
+- [x] Compilación con `-lpthread`
+- [x] Evolución: de monoproceso a multicore
+- [x] Mini examen
+- [x] Corrección
 
-**Estado:** ⬜ Pendiente
+**Estado:** ✅ Completado
 
 ---
 
@@ -533,6 +533,9 @@ Usaremos esta sección para registrar conceptos que hayan causado dificultades.
 | 2026-08-18 | Ciclo de Instrucción | Confundir IR con PC | PC almacena dirección de próxima instrucción; IR almacena instrucción actual | ✅ |
 | 2026-08-18 | Von Neumann | No reconocer que "programa almacenado" significa datos e instrucciones en la misma memoria | En Von Neumann, datos e instrucciones comparten la misma memoria principal | ✅ |
 | 2026-08-18 | Estructuras SO | Confundir modo supervisor con el SO completo (Linux/Windows) | Modo supervisor es el modo donde ejecuta el kernel del SO, no el SO completo | ✅ |
+| 2026-08-20 | Hilos | Confundir `-lthread` con `-lpthread` | El flag correcto es `-lpthread` (con "p" de POSIX threads) | ✅ |
+| 2026-08-20 | Hilos | Pensar que race condition es el único riesgo de memoria compartida | Race condition es el más directo; deadlock y starvation son riesgos más generales | ✅ |
+| 2026-08-20 | Hilos | Confundir void* con void (pensar que es porque no retorna nada) | void* es un puntero genérico que acepta cualquier tipo de dato, no solo "no retorna nada" | ✅ |
 
 ---
 
@@ -567,9 +570,9 @@ Antes del examen final debería poder explicar con mis propias palabras:
 - [x] Qué es `fork()` y cómo crea procesos
 - [x] Qué es un cambio de contexto
 - [x] Qué es IPC
-- [ ] Qué es un hilo
-- [ ] Qué diferencia hay entre proceso e hilo
-- [ ] Qué son hilos a nivel usuario vs kernel
+- [x] Qué es un hilo
+- [x] Qué diferencia hay entre proceso e hilo
+- [x] Qué son hilos a nivel usuario vs kernel
 - [ ] Qué hace el scheduler
 - [ ] Qué son FCFS, Round Robin, SPN
 
@@ -645,6 +648,10 @@ Estado: ✅ Realizado (94%)
 
 Estado: ✅ Realizado (100%)
 
+## Checkpoint Fase 2 — Módulo 7 (Hilos)
+
+Estado: ✅ Realizado (100%)
+
 ---
 
 # 📈 REGISTRO DE SESIONES
@@ -707,6 +714,17 @@ Estado: 🟢 Fase 2 / Módulo 5 completado.
 - Próximo paso: Módulo 7 — Hilos (Threads)
 
 Estado: 🟢 Fase 2 / Módulo 6 completado.
+
+## Sesión 7
+
+- Módulo 7 completado: Hilos (100% en mini examen final)
+- Conceptos cubiertos: qué es un hilo, proceso vs hilo, recursos compartidos/propios, stack exclusivo, concurrencia vs paralelismo, hilos a nivel usuario vs kernel, modelos multihilos (one-to-one en pthreads), ventajas, riesgos (race condition, deadlock, starvation), evolución de monoproceso a multicore
+- Programación en C: pthread_create, pthread_join, pthread_exit, flag -lpthread
+- Mini examen conceptual: 5.5/7 (79%) → Mini examen final: 8/8 (100%)
+- Errores registrados: flag -lpthread (corregido), race condition (corregido)
+- Próximo paso: Módulo 8 — Planificación de la CPU
+
+Estado: 🟢 Fase 2 / Módulo 7 completado.
 
 ---
 
@@ -821,11 +839,11 @@ Al terminar esta ruta, el objetivo es que puedas:
 # 📌 ESTADO ACTUAL
 
 **Fase:** 2 — Introducción a Sistemas Operativos
-**Módulo:** 7 — Hilos (Threads)
-**Próximo tema:** Iniciar Módulo 7 - Qué es un hilo
-**Próximo reto:** Diferenciar procesos de hilos y programar hilos en C con POSIX
+**Módulo:** 8 — Planificación de la CPU
+**Próximo tema:** Iniciar Módulo 8 - Qué es planificación
+**Próximo reto:** Comprender algoritmos de planificación y calcular tiempos
 
-**Último concepto dominado:** Procesos completados (fork, exec, wait, exit, IPC, cambio de contexto).
+**Último concepto dominado:** Módulo 7 (Hilos) completado al 100%.
 
-**Último avance:** Fase 2 al ~22% — Módulos 5 y 6 completados.
+**Último avance:** Fase 2 al ~35% — Módulos 5, 6 y 7 completados.
 
