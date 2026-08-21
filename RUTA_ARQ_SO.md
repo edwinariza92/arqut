@@ -22,7 +22,7 @@
 | 4 | Integración y Repaso General | ⬜ Pendiente |
 | 5 | Preparación Examen Coderbyte | ⬜ Pendiente |
 
-**Progreso orientativo:** Fase 2 — ~35% (Módulos 5, 6 y 7 completados)
+**Progreso orientativo:** Fase 2 — ~45% (Módulos 5, 6 y 7 completados; Módulo 8 en progreso)
 
 ---
 
@@ -272,11 +272,11 @@ Comprender qué hace un sistema operativo y cómo administra los recursos del co
 
 **Complejidad:** 4/5
 
-- [ ] Qué es planificación
-- [ ] Scheduler (planificador)
-- [ ] Planificador largo plazo, corto plazo y mediano plazo
+- [x] Qué es planificación
+- [x] Scheduler (planificador)
+- [x] Planificador largo plazo, corto plazo y mediano plazo
 - [ ] Objetivos de planificación (utilización, throughput, tiempo de retorno, tiempo de espera)
-- [ ] Ráfagas de CPU e I/O
+- [x] Ráfagas de CPU e I/O
 - [ ] Cambio de contexto y despachador (dispatcher)
 - [ ] Algoritmos no expropiativos:
   - [ ] FCFS (First-Come, First-Served)
@@ -294,7 +294,7 @@ Comprender qué hace un sistema operativo y cómo administra los recursos del co
 - [ ] Mini examen
 - [ ] Corrección
 
-**Estado:** ⬜ Pendiente
+**Estado:** 🟢 En progreso
 
 ---
 
@@ -536,6 +536,9 @@ Usaremos esta sección para registrar conceptos que hayan causado dificultades.
 | 2026-08-20 | Hilos | Confundir `-lthread` con `-lpthread` | El flag correcto es `-lpthread` (con "p" de POSIX threads) | ✅ |
 | 2026-08-20 | Hilos | Pensar que race condition es el único riesgo de memoria compartida | Race condition es el más directo; deadlock y starvation son riesgos más generales | ✅ |
 | 2026-08-20 | Hilos | Confundir void* con void (pensar que es porque no retorna nada) | void* es un puntero genérico que acepta cualquier tipo de dato, no solo "no retorna nada" | ✅ |
+| 2026-08-21 | Transiciones de estados | Pensar que el scheduler decide el paso a Bloqueado | Lo decide el propio proceso al hacer la llamada al sistema | ✅ |
+| 2026-08-21 | Overhead del scheduler | Juzgar el costo por valor absoluto (ms) | Importa la proporción decisión/ráfaga, no los ms absolutos | ✅ |
+| 2026-08-21 | Cálculo de tiempos | Calcular sin construir primero la línea de tiempo | Dibujar siempre quién corre y cuándo antes de aplicar fórmulas | ✅ |
 
 ---
 
@@ -726,6 +729,17 @@ Estado: 🟢 Fase 2 / Módulo 6 completado.
 
 Estado: 🟢 Fase 2 / Módulo 7 completado.
 
+## Sesión 8
+
+- Inicio del Módulo 8: Planificación de la CPU (primera mitad)
+- Conceptos cubiertos: qué es planificar, transición Listo→Ejecución (dispatch), quién decide cada transición de estado, schedulers de largo/mediano/corto plazo, overhead y su proporción, ráfagas de CPU e I/O, CPU-bound vs I/O-bound, métricas turnaround y waiting time
+- Ejercicios FCFS básicos de cálculo de tiempos resueltos (waiting, turnaround, instantes de inicio/fin)
+- Mini examen parcial: conceptual 4/4 ✅; cálculos 3/3 tras corrección (error inicial: no construir línea de tiempo antes de calcular)
+- Errores registrados: 3 nuevos (transición a Bloqueado, overhead proporcional, línea de tiempo)
+- Próximo paso: Despachador (dispatcher) y cambio de contexto, luego algoritmo FCFS formal
+
+Estado: 🟢 Fase 2 / Módulo 8 en progreso (primera mitad).
+
 ---
 
 # 🔁 REPASOS
@@ -839,11 +853,11 @@ Al terminar esta ruta, el objetivo es que puedas:
 # 📌 ESTADO ACTUAL
 
 **Fase:** 2 — Introducción a Sistemas Operativos
-**Módulo:** 8 — Planificación de la CPU
-**Próximo tema:** Iniciar Módulo 8 - Qué es planificación
-**Próximo reto:** Comprender algoritmos de planificación y calcular tiempos
+**Módulo:** 8 — Planificación de la CPU (🟢 En progreso)
+**Próximo tema:** Despachador (dispatcher) y cambio de contexto
+**Próximo reto:** Algoritmo FCFS formal + ejercicios de cálculo de tiempos más largos
 
-**Último concepto dominado:** Módulo 7 (Hilos) completado al 100%.
+**Último concepto dominado:** Fundamentos de planificación, schedulers y ráfagas CPU/I/O (mini examen parcial: 4/4 conceptual).
 
-**Último avance:** Fase 2 al ~35% — Módulos 5, 6 y 7 completados.
+**Último avance:** Fase 2 al ~45% — Módulo 8 iniciado (primera mitad).
 
