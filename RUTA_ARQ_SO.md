@@ -22,7 +22,7 @@
 | 4 | Integración y Repaso General | ⬜ Pendiente |
 | 5 | Preparación Examen Coderbyte | ⬜ Pendiente |
 
-**Progreso orientativo:** Fase 2 — ~45% (Módulos 5, 6 y 7 completados; Módulo 8 en progreso)
+**Progreso orientativo:** Fase 2 — ~70% (Módulos 5, 6, 7 completados; Módulo 8 casi completado)
 
 ---
 
@@ -275,24 +275,24 @@ Comprender qué hace un sistema operativo y cómo administra los recursos del co
 - [x] Qué es planificación
 - [x] Scheduler (planificador)
 - [x] Planificador largo plazo, corto plazo y mediano plazo
-- [ ] Objetivos de planificación (utilización, throughput, tiempo de retorno, tiempo de espera)
+- [x] Objetivos de planificación (utilización, throughput, tiempo de retorno, tiempo de espera)
 - [x] Ráfagas de CPU e I/O
-- [ ] Cambio de contexto y despachador (dispatcher)
-- [ ] Algoritmos no expropiativos:
-  - [ ] FCFS (First-Come, First-Served)
-  - [ ] HRRN (Highest Response Ratio Next)
-- [ ] Algoritmos expropiativos:
-  - [ ] Round Robin (quantum)
-  - [ ] SPN (Shortest Process Next)
-  - [ ] Colas de realimentación (Multilevel Feedback Queue)
-- [ ] Tiempo de espera, tiempo de respuesta, turnaround time
+- [x] Cambio de contexto y despachador (dispatcher)
+- [x] Algoritmos no expropiativos:
+  - [x] FCFS (First-Come, First-Served)
+  - [x] HRRN (Highest Response Ratio Next)
+- [x] Algoritmos expropiativos:
+  - [x] Round Robin (quantum)
+  - [x] SPN (Shortest Process Next)
+  - [x] Colas de realimentación (Multilevel Feedback Queue)
+- [x] Tiempo de espera, tiempo de respuesta, turnaround time
 - [ ] Ejercicios de cálculo de tiempos
 - [ ] Comparación de algoritmos
-- [ ] Planificación en tiempo real
-- [ ] Planificación SMP (Symmetric Multiprocessing)
-- [ ] Afinidad de procesador
-- [ ] Mini examen
-- [ ] Corrección
+- [x] Planificación en tiempo real
+- [x] Planificación SMP (Symmetric Multiprocessing)
+- [x] Afinidad de procesador
+- [x] Mini examen
+- [x] Corrección
 
 **Estado:** 🟢 En progreso
 
@@ -539,6 +539,11 @@ Usaremos esta sección para registrar conceptos que hayan causado dificultades.
 | 2026-08-21 | Transiciones de estados | Pensar que el scheduler decide el paso a Bloqueado | Lo decide el propio proceso al hacer la llamada al sistema | ✅ |
 | 2026-08-21 | Overhead del scheduler | Juzgar el costo por valor absoluto (ms) | Importa la proporción decisión/ráfaga, no los ms absolutos | ✅ |
 | 2026-08-21 | Cálculo de tiempos | Calcular sin construir primero la línea de tiempo | Dibujar siempre quién corre y cuándo antes de aplicar fórmulas | ✅ |
+| 2026-08-25 | FCFS | Calcular waiting time incorrectamente (12.75 en vez de 5.75) | Construir la línea de tiempo y restar llegada de inicio de ejecución | ✅ |
+| 2026-08-25 | SPN | No considerar que procesos llegan en distintos momentos | Verificar disponibilidad antes de ordenar por ráfaga | ✅ |
+| 2026-08-25 | Round Robin | Calcular turnaround sin trazar línea de tiempo paso a paso | Siempre dibujar la cola y los tiempos antes de calcular | ✅ |
+| 2026-08-25 | V/F | Pensar que FCFS minimiza waiting time | SPN minimiza waiting; FCFS produce efecto convoy | ✅ |
+| 2026-08-25 | V/F | Pensar que Round Robin nunca produce starvation | Puede ocurrir si quantum es muy pequeño y siempre llegan procesos nuevos | ✅ |
 
 ---
 
@@ -576,8 +581,8 @@ Antes del examen final debería poder explicar con mis propias palabras:
 - [x] Qué es un hilo
 - [x] Qué diferencia hay entre proceso e hilo
 - [x] Qué son hilos a nivel usuario vs kernel
-- [ ] Qué hace el scheduler
-- [ ] Qué son FCFS, Round Robin, SPN
+- [x] Qué hace el scheduler
+- [x] Qué son FCFS, Round Robin, SPN
 
 ### Fase 3
 - [ ] Qué es la gestión de memoria
@@ -740,6 +745,16 @@ Estado: 🟢 Fase 2 / Módulo 7 completado.
 
 Estado: 🟢 Fase 2 / Módulo 8 en progreso (primera mitad).
 
+## Sesión 9
+
+- Módulo 8 continuado: segunda mitad
+- Conceptos cubiertos: despachador (dispatcher) y cambio de contexto, 5 métricas de planificación (utilización, throughput, turnaround, waiting, response), algoritmos no expropiativos (FCFS, HRRN), algoritmos expropiativos (Round Robin, SPN), MLFQ (colas de realimentación), planificación en tiempo real (hard/soft/firm), SMP y afinidad de procesador
+- Mini examen completo del Módulo 8: 13/19 (68%)
+- Errores registrados: cálculo FCFS incorrecto, SPN sin considerar llegadas escalonadas, Round Robin sin línea de tiempo, V/F sobre FCFS y starvation
+- Próximo paso: Completar ejercicios de cálculo de tiempos y comparación de algoritmos, luego Examen de Fase 2
+
+Estado: 🟢 Fase 2 / Módulo 8 casi completado (faltan ejercicios de cálculo y comparación).
+
 ---
 
 # 🔁 REPASOS
@@ -853,11 +868,11 @@ Al terminar esta ruta, el objetivo es que puedas:
 # 📌 ESTADO ACTUAL
 
 **Fase:** 2 — Introducción a Sistemas Operativos
-**Módulo:** 8 — Planificación de la CPU (🟢 En progreso)
-**Próximo tema:** Despachador (dispatcher) y cambio de contexto
-**Próximo reto:** Algoritmo FCFS formal + ejercicios de cálculo de tiempos más largos
+**Módulo:** 8 — Planificación de la CPU (🟢 En progreso — casi completado)
+**Próximo tema:** Ejercicios de cálculo de tiempos + comparación de algoritmos
+**Próximo reto:** Examen de Fase 2
 
-**Último concepto dominado:** Fundamentos de planificación, schedulers y ráfagas CPU/I/O (mini examen parcial: 4/4 conceptual).
+**Último concepto dominado:** Despachador, métricas, FCFS, HRRN, Round Robin, SPN, MLFQ, tiempo real, SMP, afinidad de procesador.
 
-**Último avance:** Fase 2 al ~45% — Módulo 8 iniciado (primera mitad).
+**Último avance:** Fase 2 al ~70% — Módulo 8 casi completado (teoría completa, faltan ejercicios de cálculo y comparación).
 
