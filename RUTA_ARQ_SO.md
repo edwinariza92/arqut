@@ -18,11 +18,11 @@
 |---|---|---|
 | 1 | Arquitectura de Computadores | ✅ Completado |
 | 2 | Introducción a Sistemas Operativos | 🟢 En progreso |
-| 3 | Conceptos Avanzados de Sistemas Operativos | ⬜ Pendiente |
+| 3 | Conceptos Avanzados de Sistemas Operativos | 🟢 En progreso |
 | 4 | Integración y Repaso General | ⬜ Pendiente |
 | 5 | Preparación Examen Coderbyte | ⬜ Pendiente |
 
-**Progreso orientativo:** Fase 2 — ~70% (Módulos 5, 6, 7 completados; Módulo 8 casi completado)
+**Progreso orientativo:** Fase 2 — ~70% (Módulos 5, 6, 7 completados; Módulo 8 casi completado) · Fase 3 — 🟢 iniciada (Módulo 9 primera mitad)
 
 ---
 
@@ -323,18 +323,18 @@ Comprender cómo el sistema operativo administra memoria y almacenamiento.
 
 **Complejidad:** 4/5
 
-- [ ] Por qué el SO administra memoria
-- [ ] Memoria física y direcciones de memoria
-- [ ] Traducción de direcciones lógicas a físicas
-- [ ] MMU (Unidad de Manejo de Memoria)
-- [ ] Registro de relocalización
-- [ ] Momentos de asociación de direcciones (compilación, carga, ejecución)
-- [ ] Carga dinámica y encadenamiento dinámico
-- [ ] Asignación contigua
-- [ ] Registros base y límite
-- [ ] Fragmentación interna y externa
-- [ ] Algoritmos de ubicación (primer ajuste, mejor ajuste, siguiente ajuste, peor ajuste)
-- [ ] Compactación
+- [x] Por qué el SO administra memoria
+- [x] Memoria física y direcciones de memoria
+- [x] Traducción de direcciones lógicas a físicas
+- [x] MMU (Unidad de Manejo de Memoria)
+- [x] Registro de relocalización
+- [x] Momentos de asociación de direcciones (compilación, carga, ejecución)
+- [x] Carga dinámica y encadenamiento dinámico
+- [x] Asignación contigua
+- [x] Registros base y límite
+- [x] Fragmentación interna y externa
+- [x] Algoritmos de ubicación (primer ajuste, mejor ajuste, siguiente ajuste, peor ajuste)
+- [x] Compactación
 - [ ] Paginación (páginas, marcos, tabla de páginas)
 - [ ] Traducción de direcciones con paginación
 - [ ] Paginación multinivel
@@ -348,7 +348,7 @@ Comprender cómo el sistema operativo administra memoria y almacenamiento.
 - [ ] Mini examen
 - [ ] Corrección
 
-**Estado:** ⬜ Pendiente
+**Estado:** 🟢 En progreso (primera mitad completada: direcciones, MMU, binding, fragmentación, algoritmos)
 
 ---
 
@@ -544,6 +544,9 @@ Usaremos esta sección para registrar conceptos que hayan causado dificultades.
 | 2026-08-25 | Round Robin | Calcular turnaround sin trazar línea de tiempo paso a paso | Siempre dibujar la cola y los tiempos antes de calcular | ✅ |
 | 2026-08-25 | V/F | Pensar que FCFS minimiza waiting time | SPN minimiza waiting; FCFS produce efecto convoy | ✅ |
 | 2026-08-25 | V/F | Pensar que Round Robin nunca produce starvation | Puede ocurrir si quantum es muy pequeño y siempre llegan procesos nuevos | ✅ |
+| 2026-08-28 | Gestión de Memoria | Aritmética con ceros: 500+25000=2500 (era 25500); 40−12=38 (era 28); 30000+1500=32000 (era 31500) | Verificar siempre sumas/restas como paso final; 3 errores del mismo tipo en una sesión | 🔁 |
+| 2026-08-28 | Gestión de Memoria | Confundir mejor ajuste con primer ajuste | Mejor ajuste = hueco más pequeño que quepa (menor sobrante), no el primero | ✅ |
+| 2026-08-28 | Gestión de Memoria | Siguiente ajuste: llegar a D saltando el hueco C | La búsqueda continúa en orden circular desde la última posición | ✅ |
 
 ---
 
@@ -585,7 +588,7 @@ Antes del examen final debería poder explicar con mis propias palabras:
 - [x] Qué son FCFS, Round Robin, SPN
 
 ### Fase 3
-- [ ] Qué es la gestión de memoria
+- [x] Qué es la gestión de memoria
 - [ ] Qué es la paginación
 - [ ] Qué es una tabla de páginas
 - [ ] Qué es la segmentación
@@ -755,6 +758,17 @@ Estado: 🟢 Fase 2 / Módulo 8 en progreso (primera mitad).
 
 Estado: 🟢 Fase 2 / Módulo 8 casi completado (faltan ejercicios de cálculo y comparación).
 
+## Sesión 10
+
+- Inicio de la Fase 3: Módulo 9 — Gestión de Memoria (primera mitad)
+- Conceptos cubiertos: por qué el SO administra memoria (protección y asignación), direcciones lógicas vs físicas, MMU, registro de relocalización (base/límite), momentos de asociación (compilación, carga, ejecución), carga dinámica, encadenamiento dinámico (estático vs dinámico), asignación contigua, fragmentación interna y externa, compactación, algoritmos de ubicación (primer, siguiente, mejor, peor ajuste)
+- Ejercicios: traducción de direcciones lógica→física con base/límite, algoritmo de colocación con huecos
+- Mini-checkpoint: 5/6 (83%) — error en suma 30000+1500
+- Errores registrados: 3 (aritmética con ceros repetida ×3, mejor ajuste vs primer ajuste, siguiente ajuste saltando huecos)
+- Próximo paso: Paginación (páginas, marcos, tabla de páginas, traducción)
+
+Estado: 🟢 Fase 3 / Módulo 9 en progreso (primera mitad).
+
 ---
 
 # 🔁 REPASOS
@@ -867,12 +881,12 @@ Al terminar esta ruta, el objetivo es que puedas:
 
 # 📌 ESTADO ACTUAL
 
-**Fase:** 2 — Introducción a Sistemas Operativos
-**Módulo:** 8 — Planificación de la CPU (🟢 En progreso — casi completado)
-**Próximo tema:** Ejercicios de cálculo de tiempos + comparación de algoritmos
-**Próximo reto:** Examen de Fase 2
+**Fase:** 3 — Conceptos Avanzados de Sistemas Operativos
+**Módulo:** 9 — Gestión de Memoria (🟢 En progreso — primera mitad completada)
+**Próximo tema:** Paginación (páginas, marcos, tabla de páginas)
+**Próximo reto:** Segunda mitad del Módulo 9 (paginación + segmentación + swapping) y mini examen del módulo
 
-**Último concepto dominado:** Despachador, métricas, FCFS, HRRN, Round Robin, SPN, MLFQ, tiempo real, SMP, afinidad de procesador.
+**Último concepto dominado:** Direcciones lógicas/físicas, MMU, registro base/límite, binding (compilación/carga/ejecución), carga y encadenamiento dinámico, fragmentación interna/externa, compactación, 4 algoritmos de ubicación.
 
-**Último avance:** Fase 2 al ~70% — Módulo 8 casi completado (teoría completa, faltan ejercicios de cálculo y comparación).
+**Último avance:** Fase 3 iniciada — primera mitad del Módulo 9 completada (mini-checkpoint 5/6). Pendiente de retomar: ejercicios de cálculo del Módulo 8 y Examen de Fase 2.
 
